@@ -22,7 +22,7 @@
 <body>
   <header class="header">
     <nav class="nav-container container">
-      <a href="#" class="logo">Creehaz</a>
+      <a href="#" class="logo"><img src="/assets/Creehaz_logo_neg.svg" alt=""></a>
       <button class="menu-toggle" aria-label="Toggle menu">☰</button>
       <div class="nav-menu">
         <a href="#inicio">Inicio</a>
@@ -31,7 +31,12 @@
         <a href="#contacto">Contacto</a>
         <a href="#faq">FAQ</a>
       </div>
-      <a href="#" class="btn btn-c">📅</a>
+      <div>
+      <a href="#" class="btn-c btn-header">
+        <img src="/assets/Icons/Calendar_Remove.svg" alt="" style="
+    vertical-align: text-bottom;">
+      </a>
+    </div>
     </nav>
   </header>
 
@@ -47,16 +52,19 @@
         construir tu sitio web,<br /> app, e-commerce o cualquier producto digital que tengas en<br /> mente.</p>
       <div class="hero-buttons">
         <a href="#" class="btn  btn-outline">Diseña tu producto</a>
-        <a href="#" class="btn btn-c btn-primary ">Agenda una llamada</a>
+        <a href="#" class="btn btn-c btn-primary .btn-home-secondary" style="
+        display: flex;
+        flex-flow: wrap;
+    "><img src="/assets/Icons/Calendar_Remove.svg" alt="">Agenda una llamada</a>
       </div>
     </section>
 
     <section class="brands container">
       <div class="brands-grid">
-        <img src="assets/google.svg" alt="">
-        <img src="assets/shopi.svg" alt="">
-        <img src="assets/wordpress.svg" alt="">
-        <img src="assets/woo.svg" alt="">
+        <img src="/assets/Logos/google.svg" alt="">
+        <img src="/assets/Logos/shopify-partner.svg" alt="">
+        <img src="/assets/Logos/wordpress.svg" alt="">
+        <img src="/assets/Logos/woocommerce.svg" alt="">
       </div>
     </section>
 
@@ -68,7 +76,7 @@
           </div>
           <div>
             <div class="service-card">
-              <img class="web-img" src="/assets/diseño.png" alt="Diseño web" />
+              <img class="web-img" src="/assets/Images/web-design-image.png" alt="Diseño web" />
               <h3 class="web-h3">Diseño web</h3>
               <p class="web-p">
                 Creamos sitios web a medida, con diseños impactantes y
@@ -81,7 +89,7 @@
         <div class="column" id="b">
           <div>
             <div class="service-card">
-              <img class="e-commerce-img" src="/assets/e-commerce.png" alt="e-Commerce" />
+              <img class="e-commerce-img" src="/assets/Images/ecom-image.png" alt="e-Commerce" />
               <h3 class="e-commerce-h3">e-Commerce</h3>
               <p class="e-commerce-p">
                 Diseñamos tiendas online que destacan por su diseño intuitivo,
@@ -101,7 +109,7 @@
                 rendimiento y adaptabilidad.
               </p>
             </div>
-            <img src="/assets/dev.png" alt="Desarrollo de aplicaciones" />
+            <img src="/assets/Images/app-dev-image.png" alt="Desarrollo de aplicaciones" />
 
           </div>
         </div>
@@ -167,44 +175,8 @@
             proyecto.
           </p>
           <div class="btn-contact">
-            <a href="#" class="btn btn-c">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                class="calendar-icon"
-              >
-                <path
-                  d="M19 4H5C3.89543 4 3 4.89543 3 6V20C3 21.1046 3.89543 22 5 22H19C20.1046 22 21 21.1046 21 20V6C21 4.89543 20.1046 4 19 4Z"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M16 2V6"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M8 2V6"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M3 10H21"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
+            <a href="#" class="btn btn-c btn-primary .btn-home-secondary" ><img src="/assets/Icons/Calendar_Remove.svg" alt="">
+              
               Agenda una llamada
             </a>
           </div>
@@ -231,257 +203,94 @@
       <div class="faq-grid">
         <!-- Pregunta 1 -->
         <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
+          <button class="faq-question" aria-expanded="true">
             <div class="question-header">
               <div class="icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <path
-                    d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  />
-                  <path
-                    d="M12 6V12L16 14"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                  />
-                </svg>
+                <img src="/assets/Icons/Timer.svg" alt="">
               </div>
               <h3>
-                ¿Cuánto tiempo toma desarrollar una landing page o un sitio
-                web?
+                ¿Cuánto tiempo toma desarrollar una landing page o un sitio web?
               </h3>
             </div>
-            <span class="arrow">&#x2304;</span>
           </button>
           <div class="faq-answer">
             <p>
-              El tiempo de desarrollo varía según la complejidad del proyecto.
-              Una landing page simple puede tomar 1-2 semanas, mientras que un
-              sitio web completo puede llevar 4-8 semanas o más dependiendo de
-              las funcionalidades requeridas.
+              Cada proyecto lo estimamos de manera individual dependiendo de su complejidad; en promedio el desarrollo de una landing page tarda 10 días hábiles y un sitio web desde 1 mes en adelante.
             </p>
           </div>
         </div>
 
         <!-- Pregunta 2 -->
         <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
+          <button class="faq-question" aria-expanded="true">
             <div class="question-header">
               <div class="icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <path
-                    d="M21 16V8C21 6.89543 20.1046 6 19 6H5C3.89543 6 3 6.89543 3 8V16C3 17.1046 3.89543 18 5 18H19C20.1046 18 21 17.1046 21 16Z"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  />
-                  <path
-                    d="M12 14C13.1046 14 14 13.1046 14 12C14 10.8954 13.1046 10 12 10C10.8954 10 10 10.8954 10 12C10 13.1046 10.8954 14 12 14Z"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  />
-                </svg>
+                <img src="/assets/Icons/Map_Pin.svg" alt="">
               </div>
               <h3>
-                ¿Brindan soporte y mantenimiento después de entregar el
-                proyecto?
+                ¿Trabajan con clientes fuera de México?
               </h3>
             </div>
-            <span class="arrow">&#x2304;</span>
           </button>
           <div class="faq-answer">
             <p>
-              Sí, ofrecemos planes de mantenimiento y soporte post-lanzamiento
-              para asegurar que tu sitio web o aplicación funcione de manera
-              óptima. Esto incluye actualizaciones de seguridad, corrección de
-              errores y mejoras continuas.
+              Sí, tenemos capacidad para llevar tu proyecto desde cualquier parte de Latinoamérica que se encuentre tu equipo.
             </p>
           </div>
         </div>
 
         <!-- Pregunta 3 -->
         <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
+          <button class="faq-question" aria-expanded="true">
             <div class="question-header">
               <div class="icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <path
-                    d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18Z"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  />
-                  <path
-                    d="M12 2V4M12 20V22M4 12H2M6.31412 6.31412L4.8999 4.8999M17.6859 6.31412L19.1001 4.8999M6.31412 17.69L4.8999 19.1042M17.6859 17.69L19.1001 19.1042M22 12H20"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                  />
-                </svg>
+                <img src="/assets/Icons/Arrows_Reload_01.svg" alt="">
               </div>
               <h3>
-                ¿Qué tecnologías utilizan para desarrollar apps móviles?
-              </h3>
+                ¿Qué pasa si no me gusta el diseño o la funcionalidad de mi producto?              </h3>
             </div>
-            <span class="arrow">&#x2304;</span>
           </button>
           <div class="faq-answer">
             <p>
-              Utilizamos tecnologías modernas como React Native y Flutter para
-              desarrollo multiplataforma, así como Swift para iOS y Kotlin
-              para Android en desarrollo nativo. La elección depende de los
-              requerimientos específicos del proyecto.
+              Antes de comenzar con el desarrollo, te mostraremos un prototipo funcional de tu producto para que puedas revisarlo a detalle, probarlo y solicitar los ajustes que necesites.
             </p>
           </div>
         </div>
 
         <!-- Pregunta 4 -->
         <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
+          <button class="faq-question" aria-expanded="true">
             <div class="question-header">
               <div class="icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <path
-                    d="M14 2H6C5.46957 2 4.96086 2.21071 4.58579 2.58579C4.21071 2.96086 4 3.46957 4 4V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V8L14 2Z"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M14 2V8H20"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M16 13H8"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M16 17H8"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M10 9H9H8"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
+                <img src="/assets/Icons/File_Blank.svg" alt="">
               </div>
               <h3>
-                ¿Qué información o materiales necesito proporcionar para
-                comenzar un proyecto?
+                ¿Qué información o materiales necesito proporcionar para comenzar un proyecto?
               </h3>
             </div>
-            <span class="arrow">&#x2304;</span>
           </button>
           <div class="faq-answer">
             <p>
-              Para comenzar, necesitamos una descripción detallada del
-              proyecto, objetivos comerciales, público objetivo, referencias
-              de diseño que te gusten, y cualquier material existente como
-              logos o guías de marca. Durante nuestra llamada inicial, te
-              guiaremos sobre todos los elementos necesarios.
+              Dependerá del tipo de proyecto, generalmente te pediremos elementos de tu marca, como logotipos, tipografías o enlaces a redes sociales, por ejemplo. Siempre te lo solicitaremos al inicio y de una manera clara.
             </p>
           </div>
         </div>
 
         <!-- Pregunta 5 -->
         <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
+          <button class="faq-question" aria-expanded="true">
             <div class="question-header">
               <div class="icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <path
-                    d="M15 3H19C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H9"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M15 3L12 6L9 3"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M12 6V15"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
+                <img src="/assets/Icons/Devices.svg" alt="">
               </div>
               <h3>
-                ¿Puedo solicitar cambios en el diseño después de que esté
-                terminado?
+                ¿Pueden rediseñar un sitio web ya existente?
               </h3>
             </div>
-            <span class="arrow">&#x2304;</span>
           </button>
           <div class="faq-answer">
             <p>
-              Sí, incluimos rondas de revisión en nuestro proceso. Una vez
-              finalizado el proyecto, también puedes solicitar cambios menores
-              dentro del período de garantía. Para cambios mayores, podemos
-              discutir un plan de modificaciones.
-            </p>
-          </div>
-        </div>
-
-        <!-- Pregunta 6 -->
-        <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
-            <div class="question-header">
-              <div class="icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <path
-                    d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  />
-                  <path
-                    d="M9.09009 9.00008C9.32519 8.33175 9.78924 7.76819 10.4 7.40921C11.0108 7.05024 11.729 6.91902 12.4273 7.03879C13.1255 7.15857 13.7589 7.52161 14.2151 8.06361C14.6713 8.60561 14.9211 9.29112 14.9201 10.0001C14.9201 12.0001 11.9201 13.0001 11.9201 13.0001"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M12 17H12.01"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </div>
-              <h3>
-                ¿Pueden rediseñar un sitio web ya existente o necesitan
-                empezar desde cero?
-              </h3>
-            </div>
-            <span class="arrow">&#x2304;</span>
-          </button>
-          <div class="faq-answer">
-            <p>
-              Podemos trabajar con ambos enfoques. Podemos rediseñar sitios
-              web existentes manteniendo el contenido y funcionalidades
-              importantes, o crear uno completamente nuevo. La decisión
-              dependerá de tus objetivos y el estado actual del sitio.
+              Sí, desde un rediseño estético hasta un rediseño basado en datos para mejorar tus ventas, contactos o cualquier conversión que busques en tu sitio.
             </p>
           </div>
         </div>
@@ -492,7 +301,7 @@
   <footer class="footer">
     <div class="footer-grid container">
       <div class="footer-brand">
-        <h2>Creehaz</h2>
+        <img src="/assets/Creehaz_logo_neg.svg" alt="">
         <p>Creando increíbles experiencias digitales para tu negocio.</p>
         <a href="mailto:hello@creehaz.com" class="footer-email">hello@creehaz.com</a>
       </div>
