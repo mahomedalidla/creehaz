@@ -14,7 +14,11 @@
 }
 
 body {
-  background-color: var(--color-dark);
+  background: rgb(0,0,0);
+  background: -moz-linear-gradient(45deg, rgba(0,0,0,1) 12%, rgba(15,15,0,1) 94%);
+  background: -webkit-linear-gradient(45deg, rgba(0,0,0,1) 12%, rgba(15,15,0,1) 94%);
+  background: linear-gradient(45deg, rgba(0,0,0,1) 12%, rgba(15,15,0,1) 94%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#0f0f00",GradientType=1);
   color: var(--color-light);
   line-height: 1.6;
   overflow-x: hidden;
@@ -40,6 +44,17 @@ body {
   padding: 13px 25px;
   background-image: linear-gradient(45deg, #f97532, #f5590a);
   border-radius: 90px;
+
+  flex-grow: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border-radius: 999px;
+  box-shadow: 0 0 32px 0 rgba(249, 117, 50, 0.25), inset 0 2px 0 0 rgba(255, 255, 255, 0.2), inset 0 -2px 0 0 rgba(0, 0, 0, 0.1);
+  background-image: linear-gradient(123deg, #f97532 0%, #f5590a 100%);
 }
 
 .nav-container {
@@ -48,12 +63,16 @@ body {
   align-items: center;
   gap: 2rem;
   max-width: 840px;
-  border: solid 0.5px #475259;
+  border: solid 0.5px var(--color-grey);
   padding: 12px 24px;
   border-radius: 40px;
   background: rgb(26 26 26 / 58%);
   backdrop-filter: blur(10px);
   height: 60px;
+
+
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background-color: rgba(15, 15, 15, 0.1);
 }
 
 .logo {
@@ -241,6 +260,7 @@ body {
   margin: 0px 24px;
   border-radius: 40px;
   padding-top: 10%;
+  box-shadow: 0 16px 32px -12px rgba(0, 0, 0, 0.25), 0 8px 16px -4px rgba(0, 0, 0, 0.25), 0 8px 8px -8px rgba(0, 0, 0, 0.25);
 }
 
 .service-card {
@@ -383,6 +403,8 @@ body {
   padding: 24px;
   border-radius: 16px;
   border: 0.5px solid #475259;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+
 }
 
 .line {
@@ -714,6 +736,7 @@ body {
 
   .services-grid {
     grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+    box-shadow: 0 16px 32px -12px rgba(0, 0, 0, 0.25), 0 8px 16px -4px rgba(0, 0, 0, 0.25), 0 8px 8px -8px rgba(0, 0, 0, 0.25);
   }
 
   .service-card-last {
@@ -794,6 +817,15 @@ body {
     width: 100%;
   }
 
+  .hero h1{
+    font-size: 4rem;
+    width: min-content;
+  }
+
+  .hero p {
+    max-width: 34ch;
+  }
+
   .nav-menu.active {
     display: flex;
   }
@@ -828,6 +860,7 @@ body {
   .services-grid {
     grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
     margin: 0;
+    box-shadow: 0 16px 32px -12px rgba(0, 0, 0, 0.25), 0 8px 16px -4px rgba(0, 0, 0, 0.25), 0 8px 8px -8px rgba(0, 0, 0, 0.25);
   }
 
   .column .title {
@@ -843,6 +876,11 @@ body {
   .service-card .web-img {
     height: 300px;
     object-fit: cover;
+  }
+
+  .service-card .e-commerce-img{
+    height: 300px;
+        object-fit: cover;
   }
 
   .service-card .web-h3,
@@ -904,6 +942,8 @@ body {
     margin-bottom: 80px;
     width: 100%;
   }
+
+  .step-content{width: 75vw;}
 
   .step-number, .line {
     display: none;
