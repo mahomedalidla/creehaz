@@ -182,11 +182,9 @@ body {
 
 .servicesP {
   display: flex;
-  /* height: 100vh;  */
-  /* La altura será igual a la de la ventana */
   padding: 4rem 1rem;
-  margin-bottom: 15rem;
 }
+
 
 .column {
   width: 50%; /* Cada columna ocupa el 50% del ancho */
@@ -843,11 +841,7 @@ body {
     overflow: hidden;
   }
 
-  .servicesP {
-    display: flex;
-    padding: 4rem 1rem;
-    margin-bottom: 0rem;
-  }
+
 
   .last {
     display: grid;
