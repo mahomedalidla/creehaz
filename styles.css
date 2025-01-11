@@ -75,6 +75,14 @@ body {
   background-color: rgba(15, 15, 15, 0.1);
 }
 
+.nav-container .btn-header {
+  padding: 0.5rem 1rem;
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .logo {
   font-size: clamp(1.5rem, 3vw, 2rem);
   font-weight: bold;
@@ -160,6 +168,21 @@ body {
   display: flex;
 }
 
+.hero-buttons .btn {
+  height: 44px;
+  line-height: 44px;
+  display: inline-flex; 
+  align-items: center; 
+  justify-content: center; 
+  padding: 0 16px; 
+  font-size: 1rem;
+  text-decoration: none; 
+  border-radius: 100px;
+  cursor: pointer;
+  border: solid 0.5px #475259;
+
+}
+
 .brands {
   padding: 0 1rem;
   height: 20vh;
@@ -188,6 +211,18 @@ body {
 .btn-primary {
   background: var(--color-primary);
   color: var(--color-light);
+}
+
+.btn-c.btn-primary:hover {
+  /* Inner shadow */
+  box-shadow: 
+    inset 0 -2px 0 rgba(0, 0, 0, 0.1), /* Inner shadow negra con transparencia del 10% */
+    inset 0 2px 0 rgba(255, 255, 255, 0.2), /* Inner shadow blanca con transparencia del 20% */
+    0 0 32px rgba(249, 117, 50, 0.5); /* Drop shadow externa con transparencia del 50% */
+}
+
+.btn-outline:hover {
+  border: solid 1px #ffffff;
 }
 
 .btn-outline {
@@ -304,7 +339,7 @@ body {
 
 .service-card .web-p {
   text-align: end;
-  text-align: justify;
+  text-align: left;
   justify-self: end;
   width: 82%;
   padding-right: 5rem;
@@ -326,7 +361,7 @@ body {
 }
 
 .description-e {
-  width: 40%;
+  width: 50%;
   text-align: end;
   text-align: justify;
   justify-self: end;
@@ -342,7 +377,7 @@ body {
 .description-e p {
   padding-top: 15px;
   text-align: end;
-  text-align: justify;
+  text-align: left;
   width: 65%;
   justify-self: end;
 }
@@ -414,8 +449,9 @@ body {
 }
 
 .line {
-  border-left: solid 1px var(--color-primary);
+  border-left: solid 4px var(--color-primary);
   height: 125px;
+  
 }
 
 .workflow-buttons {
@@ -485,6 +521,7 @@ body {
   text-align: center;
   margin: 2rem 0;
   position: relative;
+  font-size: 2.125rem;
 }
 
 .email-link {
@@ -597,7 +634,7 @@ body {
 
 .faq-question[aria-expanded="true"] + .faq-answer {
   max-height: 500px;
-  padding: 0 1.5rem 1.5rem 1.5rem;
+  padding: 0 1.5rem 1.5rem 4rem;
 }
 
 .faq-answer p {
@@ -627,6 +664,7 @@ body {
   gap: 2rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   padding-bottom: 3rem;
+  max-width: 1200px;
 }
 
 .footer-brand h2 {
@@ -721,14 +759,22 @@ body {
     /* background-color: red; */
   }
 
+  .nav-menu{
+    gap: clamp(1rem, 2vw, 2rem);
+  }
+
   .nav-menu.active {
     display: flex;
   }
 
   .hero-buttons {
-    flex-direction: column;
+    flex-direction: row;
     gap: 1rem;
   }
+  .brands {
+    padding: 0 1rem;
+    height: 30vh;
+}
 
   .brands-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr)); /* Máximo dos columnas */
@@ -744,18 +790,30 @@ body {
     width: 100%;
   }
 
+  .column .title {
+    justify-items: center;
+  }
+
   .services-grid {
     grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
     box-shadow: 0 16px 32px -12px rgba(0, 0, 0, 0.25), 0 8px 16px -4px rgba(0, 0, 0, 0.25), 0 8px 8px -8px rgba(0, 0, 0, 0.25);
   }
 
   .service-card-last {
-    padding: 0 2rem;
+    padding: 0 0rem;
     border-radius: 20px;
     transition: var(--transition);
     width: 100%;
     overflow: hidden;
   }
+
+  .description-e h3 {
+    width: 100%;
+}
+
+.last{
+  justify-content: space-between;
+}
 
   .workflow-item {
     /* grid-template-columns: 1fr; */
