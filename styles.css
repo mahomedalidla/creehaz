@@ -233,6 +233,7 @@ body {
   max-height: 15vh;
   justify-items: end;
   padding-top: 60px;
+  padding-bottom: 150px;
 }
 
 .column h2 {
@@ -261,6 +262,7 @@ body {
   border-radius: 40px;
   padding-top: 10%;
   box-shadow: 0 16px 32px -12px rgba(0, 0, 0, 0.25), 0 8px 16px -4px rgba(0, 0, 0, 0.25), 0 8px 8px -8px rgba(0, 0, 0, 0.25);
+  border: solid 1px #1e2225;
 }
 
 .service-card {
@@ -297,13 +299,15 @@ body {
 .service-card .web-h3 {
   text-align: end;
   font-size: 2.125rem;
+  padding-right: 5rem;
 }
 
 .service-card .web-p {
   text-align: end;
   text-align: justify;
-  width: 57%;
   justify-self: end;
+  width: 82%;
+  padding-right: 5rem;
 }
 
 .e-commerce-img {
@@ -312,11 +316,13 @@ body {
 
 .e-commerce-h3 {
   font-size: 2.125rem;
+  padding-left: 4rem;
 }
 
 .e-commerce-p {
   /* text-align: justify; */
-  width: 61%;
+  width: 100%;
+  padding-left: 4rem;
 }
 
 .description-e {
@@ -440,6 +446,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  align-items: center;
 }
 
 .btn-contact {
@@ -522,7 +529,7 @@ body {
 }
 
 .faq-item {
-  background: rgba(26, 26, 26, 0.8);
+  /* background: rgba(26, 26, 26, 0.8); */
   border-radius: 12px;
   overflow: hidden;
   transition: all 0.3s ease;
@@ -895,6 +902,11 @@ body {
   .e-commerce-p {
     text-align: left; /* Reemplazas 'end' por 'left' o cualquier valor que desees */
     width: 100%;
+    
+  }
+
+  .e-commerce-h3{
+    padding-left: 4rem;
   }
 
   .service-card-last {
