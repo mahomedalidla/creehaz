@@ -202,6 +202,8 @@ body {
 .brands-grid img {
   padding: 2rem;
   object-fit: cover;
+  height: auto;
+  width: auto;
 }
 
 /* Buttons */
