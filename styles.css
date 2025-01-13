@@ -32,48 +32,6 @@ body {
   overflow-x: hidden;
 }
 
-/* css to modal */
-
-/* Modal styles */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100vw;
-  height: 100vh;
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0, 0, 0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4); /* Black with transparency */
-}
-
-.modal-content {
-  background-color: #fff;
-  margin: 15% auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80vw;
-  max-width: 90vw;
-}
-
-/* Close button */
-.close-btn {
-  color: #aaa;
-  font-size: 28px;
-  font-weight: bold;
-  float: right;
-  cursor: pointer;
-}
-
-.close-btn:hover,
-.close-btn:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-/*  */
 
 .container {
   width: min(90%, 1200px);

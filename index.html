@@ -22,7 +22,7 @@
 <body>
   <header class="header">
     <nav class="nav-container container">
-      <a href="#" class="logo"><img src="/assets/Creehaz_logo_neg.svg" alt=""></a>
+      <a href="#inicio" class="logo"><img src="/assets/Creehaz_logo_neg.svg" alt=""></a>
       <button class="menu-toggle" aria-label="Toggle menu">☰</button>
       <div class="nav-menu">
         <a href="#inicio">Inicio</a>
@@ -32,7 +32,7 @@
         <a href="#faq">FAQ</a>
       </div>
       <div>
-        <a href="#" class="btn-c btn-header">
+        <a href="https://calendar.app.google/5kD6oPG7sZpa5b6N7" target="_blank" class="btn-c btn-header">
           <img src="/assets/Icons/Calendar_Remove.svg" alt="" style="
     vertical-align: text-bottom;">
         </a>
@@ -51,30 +51,14 @@
       <p>Piensa en Creehaz como tu equipo de Diseño y Desarrollo de producto. Nosotros nos encargamos de
         construir tu sitio web, app, e-commerce o cualquier producto digital que tengas en mente.</p>
       <div class="hero-buttons">
-        <a href="#" class="btn  btn-outline">Diseña tu producto</a>
-        <!-- <a class="btn btn-c btn-primary .btn-home-secondary" id="agenda-btn" style="
+        <a href="https://calendar.app.google/5kD6oPG7sZpa5b6N7" target="_blank" class="btn  btn-outline">Diseña tu producto</a>
+        <a href="https://calendar.app.google/5kD6oPG7sZpa5b6N7"
+          target="_blank" class="btn btn-c btn-primary .btn-home-secondary" style="
         display: flex;
         flex-flow: wrap;
-    "><img src="/assets/Icons/Calendar_Remove.svg" alt="" id="agenda-btn" style="height: 20px;
+    "><img src="/assets/Icons/Calendar_Remove.svg" style="height: 20px;
     width: 20px;
-    align-self: center;">Agenda una llamada</a> -->
-
-        <!-- Google Calendar Appointment Scheduling Button -->
-        <a class="btn btn-c btn-primary .btn-home-secondary" id="agenda-btn" style="display: flex; flex-flow: wrap;">
-          <img src="/assets/Icons/Calendar_Remove.svg" alt="" id="agenda-btn-img"
-            style="height: 20px; width: 20px; align-self: center;">
-          Agenda una llamada
-        </a>
-
-        <!-- Modal Structure -->
-        <div id="calendar-modal" class="modal">
-          <div class="modal-content">
-            <span class="close-btn">&times;</span>
-            <iframe
-              src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0ybhsbIY_sf6Y5g7YVogCW05JhDFSmAehnr7AxrZja1mYY_fo_DD_ghd7bVbK9ZYJIujegR9ku?gv=true"
-              style="border: 0" width="100%" height="600" frameborder="0"></iframe>
-          </div>
-        </div>
+    align-self: center;">Agenda una llamada</a>
 
       </div>
     </section>
@@ -183,7 +167,7 @@
         </div>
 
         <div class="workflow-buttons">
-          <a href="#" class="btn  btn-outline-w">Diseña tu producto</a>
+          <a href="https://calendar.app.google/5kD6oPG7sZpa5b6N7" target="_blank" class="btn  btn-outline-w">Diseña tu producto</a>
         </div>
     </section>
 
@@ -197,7 +181,7 @@
             proyecto.
           </p>
           <div class="btn-contact">
-            <a href="#" class="btn btn-c btn-primary .btn-home-secondary"><img src="/assets/Icons/Calendar_Remove.svg"
+            <a href="https://calendar.app.google/5kD6oPG7sZpa5b6N7" target="_blank" class="btn btn-c btn-primary .btn-home-secondary"><img src="/assets/Icons/Calendar_Remove.svg"
                 alt="">
               Agenda una llamada
             </a>
@@ -377,31 +361,6 @@
       <p>© Creehaz 2025. Hecho en Latam <span class="heart">♥</span></p>
     </div>
   </footer>
-
-  <script>
-    // Get modal and button elements
-    var modal = document.getElementById("calendar-modal");
-    var btn = document.getElementById("agenda-btn");
-    var span = document.getElementsByClassName("close-btn")[0];
-
-    // Open the modal when the button is clicked
-    btn.onclick = function () {
-      modal.style.display = "block";
-    }
-
-    // Close the modal when the 'x' is clicked
-    span.onclick = function () {
-      modal.style.display = "none";
-    }
-
-    // Close the modal if the user clicks anywhere outside the modal
-    window.onclick = function (event) {
-      if (event.target == modal) {
-        modal.style.display = "none";
-      }
-    }
-
-  </script>
 </body>
 
 </html>
