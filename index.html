@@ -8,21 +8,19 @@
   <link rel="stylesheet" href="styles.css" type="text/css" />
 
   <script href="script.js"></script>
-    <script
-      src="script.js"
-      language="javascript"
-      type="text/javascript"
-    ></script>
+  <script src="script.js" language="javascript" type="text/javascript"></script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Pacifico&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+    rel="stylesheet">
 
 
 </head>
 
 <body>
-  <header class="header" >
+  <header class="header">
     <nav class="nav-container container">
       <a href="#" class="logo"><img src="/assets/Creehaz_logo_neg.svg" alt=""></a>
       <button class="menu-toggle" aria-label="Toggle menu">☰</button>
@@ -34,11 +32,11 @@
         <a href="#faq">FAQ</a>
       </div>
       <div>
-      <a href="#" class="btn-c btn-header">
-        <img src="/assets/Icons/Calendar_Remove.svg" alt="" style="
+        <a href="#" class="btn-c btn-header">
+          <img src="/assets/Icons/Calendar_Remove.svg" alt="" style="
     vertical-align: text-bottom;">
-      </a>
-    </div>
+        </a>
+      </div>
     </nav>
   </header>
 
@@ -54,14 +52,34 @@
         construir tu sitio web, app, e-commerce o cualquier producto digital que tengas en mente.</p>
       <div class="hero-buttons">
         <a href="#" class="btn  btn-outline">Diseña tu producto</a>
-        <a href="#" class="btn btn-c btn-primary .btn-home-secondary" style="
+        <!-- <a class="btn btn-c btn-primary .btn-home-secondary" id="agenda-btn" style="
         display: flex;
         flex-flow: wrap;
-    "><img src="/assets/Icons/Calendar_Remove.svg" alt="" style="    height: 20px;
+    "><img src="/assets/Icons/Calendar_Remove.svg" alt="" id="agenda-btn" style="height: 20px;
     width: 20px;
-    align-self: center;">Agenda una llamada</a>
+    align-self: center;">Agenda una llamada</a> -->
+
+        <!-- Google Calendar Appointment Scheduling Button -->
+        <a class="btn btn-c btn-primary .btn-home-secondary" id="agenda-btn" style="display: flex; flex-flow: wrap;">
+          <img src="/assets/Icons/Calendar_Remove.svg" alt="" id="agenda-btn-img"
+            style="height: 20px; width: 20px; align-self: center;">
+          Agenda una llamada
+        </a>
+
+        <!-- Modal Structure -->
+        <div id="calendar-modal" class="modal">
+          <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <iframe
+              src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0ybhsbIY_sf6Y5g7YVogCW05JhDFSmAehnr7AxrZja1mYY_fo_DD_ghd7bVbK9ZYJIujegR9ku?gv=true"
+              style="border: 0" width="100%" height="600" frameborder="0"></iframe>
+          </div>
+        </div>
+
       </div>
     </section>
+
+
 
     <section class="brands container">
       <div class="brands-grid">
@@ -74,7 +92,7 @@
 
     <section class="servicesP container" id="servicios">
       <div class="services-grid">
-        <div class="column" >
+        <div class="column">
           <div class="title">
             <h2>Servicios</h2>
           </div>
@@ -107,7 +125,7 @@
         <div class="service-card-last">
           <div class="last">
             <div class="description-e">
-              <h3>Desarrollo de<br/> aplicaciones</h3>
+              <h3>Desarrollo de<br /> aplicaciones</h3>
               <p>
                 Construimos aplicaciones que no solo funcionan, sino que destacan por su experiencia de usuario,
                 rendimiento y adaptabilidad.
@@ -138,48 +156,49 @@
             <h3>Diseño y prototipado</h3>
             <p>Arquitectura, diseño UX y UI y prototipado del producto.</p>
           </div>
+        </div>
+        <div class="workflow-item">
+          <div class="step-number">3</div>
+          <div class="line"></div>
+          <div class="step-content">
+            <h3>Presentación</h3>
+            <p>Feedback, iteración y aprobación del cliente.</p>
           </div>
-          <div class="workflow-item">
-            <div class="step-number">3</div>
-            <div class="line"></div>
-            <div class="step-content">
-              <h3>Presentación</h3>
-              <p>Feedback, iteración y aprobación del cliente.</p>
-            </div>
-            </div>
-            <div class="workflow-item">
-              <div class="step-number">4</div>
-              <div class="line"></div>
-              <div class="step-content">
-                <h3>Desarrollo</h3>
-                <p>Handoff, desarrollo y pruebas de calidad.</p>
-              </div>
-            </div>
-            <div class="workflow-item">
-              <div class="step-number">5</div>
-              <div class="line"></div>
-              <div class="step-content">
-                <h3>Entrega</h3>
-                <p>Presentación, entrega y monitoreo del producto.</p>
-              </div>
-            </div>
+        </div>
+        <div class="workflow-item">
+          <div class="step-number">4</div>
+          <div class="line"></div>
+          <div class="step-content">
+            <h3>Desarrollo</h3>
+            <p>Handoff, desarrollo y pruebas de calidad.</p>
+          </div>
+        </div>
+        <div class="workflow-item">
+          <div class="step-number">5</div>
+          <div class="line"></div>
+          <div class="step-content">
+            <h3>Entrega</h3>
+            <p>Presentación, entrega y monitoreo del producto.</p>
+          </div>
+        </div>
 
-            <div class="workflow-buttons">
-              <a href="#" class="btn  btn-outline-w">Diseña tu producto</a>
-            </div>
+        <div class="workflow-buttons">
+          <a href="#" class="btn  btn-outline-w">Diseña tu producto</a>
+        </div>
     </section>
 
-    
+
     <section id="contacto" class="contact container">
       <div class="contact-container container">
         <div class="contact-content">
           <h2>Hablemos</h2>
           <p>
-            Agenda una llamada de 30 minutos, nos <br/> encantará conocer más de tu
+            Agenda una llamada de 30 minutos, nos <br /> encantará conocer más de tu
             proyecto.
           </p>
           <div class="btn-contact">
-            <a href="#" class="btn btn-c btn-primary .btn-home-secondary" ><img src="/assets/Icons/Calendar_Remove.svg" alt="">
+            <a href="#" class="btn btn-c btn-primary .btn-home-secondary"><img src="/assets/Icons/Calendar_Remove.svg"
+                alt="">
               Agenda una llamada
             </a>
           </div>
@@ -187,16 +206,10 @@
           <div class="divider">
             <span>ó</span>
           </div>
-          <a href="mailto:hello@creehaz.com" class="email-link"
-            >hello@creehaz.com</a
-          >
+          <a href="mailto:hello@creehaz.com" class="email-link">hello@creehaz.com</a>
         </div>
         <div class="contact-image">
-          <img
-            src="/assets/Images/image.png"
-            alt="Laptop mostrando una videollamada"
-            class="floating"
-          />
+          <img src="/assets/Images/image.png" alt="Laptop mostrando una videollamada" class="floating" />
         </div>
       </div>
     </section>
@@ -218,7 +231,8 @@
           </button>
           <div class="faq-answer">
             <p>
-              Cada proyecto lo estimamos de manera individual dependiendo de su complejidad; en promedio el desarrollo de una landing page tarda 10 días hábiles y un sitio web desde 1 mes en adelante.
+              Cada proyecto lo estimamos de manera individual dependiendo de su complejidad; en promedio el desarrollo
+              de una landing page tarda 10 días hábiles y un sitio web desde 1 mes en adelante.
             </p>
           </div>
         </div>
@@ -237,7 +251,8 @@
           </button>
           <div class="faq-answer">
             <p>
-              Sí, tenemos capacidad para llevar tu proyecto desde cualquier parte de Latinoamérica que se encuentre tu equipo.
+              Sí, tenemos capacidad para llevar tu proyecto desde cualquier parte de Latinoamérica que se encuentre tu
+              equipo.
             </p>
           </div>
         </div>
@@ -255,7 +270,8 @@
           </button>
           <div class="faq-answer">
             <p>
-              Antes de comenzar con el desarrollo, te mostraremos un prototipo funcional de tu producto para que puedas revisarlo a detalle, probarlo y solicitar los ajustes que necesites.
+              Antes de comenzar con el desarrollo, te mostraremos un prototipo funcional de tu producto para que puedas
+              revisarlo a detalle, probarlo y solicitar los ajustes que necesites.
             </p>
           </div>
         </div>
@@ -274,7 +290,9 @@
           </button>
           <div class="faq-answer">
             <p>
-              Dependerá del tipo de proyecto, generalmente te pediremos elementos de tu marca, como logotipos, tipografías o enlaces a redes sociales, por ejemplo. Siempre te lo solicitaremos al inicio y de una manera clara.
+              Dependerá del tipo de proyecto, generalmente te pediremos elementos de tu marca, como logotipos,
+              tipografías o enlaces a redes sociales, por ejemplo. Siempre te lo solicitaremos al inicio y de una manera
+              clara.
             </p>
           </div>
         </div>
@@ -293,7 +311,8 @@
           </button>
           <div class="faq-answer">
             <p>
-              Sí, desde un rediseño estético hasta un rediseño basado en datos para mejorar tus ventas, contactos o cualquier conversión que busques en tu sitio.
+              Sí, desde un rediseño estético hasta un rediseño basado en datos para mejorar tus ventas, contactos o
+              cualquier conversión que busques en tu sitio.
             </p>
           </div>
         </div>
@@ -358,6 +377,31 @@
       <p>© Creehaz 2025. Hecho en Latam <span class="heart">♥</span></p>
     </div>
   </footer>
+
+  <script>
+    // Get modal and button elements
+    var modal = document.getElementById("calendar-modal");
+    var btn = document.getElementById("agenda-btn");
+    var span = document.getElementsByClassName("close-btn")[0];
+
+    // Open the modal when the button is clicked
+    btn.onclick = function () {
+      modal.style.display = "block";
+    }
+
+    // Close the modal when the 'x' is clicked
+    span.onclick = function () {
+      modal.style.display = "none";
+    }
+
+    // Close the modal if the user clicks anywhere outside the modal
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+
+  </script>
 </body>
 
 </html>
