@@ -894,7 +894,7 @@ body {
   }
 
   .hero h1{
-    font-size: 4rem;
+    font-size: 3rem;
     width: min-content;
   }
 
@@ -1045,6 +1045,10 @@ body {
 
   .contact-image {
     display: none;
+  }
+   
+  .contact .btn{
+    min-width: 273px
   }
 
   .faq{
