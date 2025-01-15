@@ -144,7 +144,7 @@ body {
 }
 
 .btn:hover {
-  opacity: 0.9;
+  /* opacity: 0.9; */
 }
 
 .menu-toggle {
@@ -260,7 +260,7 @@ body {
 
 .btn:hover {
   /* transform: translateY(-2px); */
-  opacity: 0.9;
+  /* opacity: 0.9; */
 }
 
 .btn-home-secondary {
