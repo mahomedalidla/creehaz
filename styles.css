@@ -930,7 +930,7 @@ body {
 
   .brands-grid img {
     object-fit: cover;
-    width: 100%;
+    width: 110%;
   }
 
   .services-grid {
