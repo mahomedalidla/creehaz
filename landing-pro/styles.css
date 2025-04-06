@@ -924,6 +924,7 @@ body {
   .hero-buttons {
     flex-direction: column;
     gap: 1rem;
+    width: 285px;
   }
 
   .btn-outline {
