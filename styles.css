@@ -607,8 +607,8 @@ header {
   margin-bottom: 0;
   border-radius: 0 0 4rem 4rem;
   z-index: 10;
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   mask: linear-gradient(to bottom, transparent 0%,rgba(0,0,0, 1) 25%);
 }
 
