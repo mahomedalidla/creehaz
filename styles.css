@@ -117,6 +117,10 @@
   --line-height-overline: 1;
 }
 
+html {
+  /* 🔑 Propiedad Clave: Fuerza un desplazamiento animado */
+  scroll-behavior: smooth;
+}
 * {
   box-sizing:border-box;
 }
@@ -134,6 +138,7 @@ body {
   justify-content: center;
   flex-direction: column;
   gap: 8.75rem;
+  transition: all ease-in-out 300ms;
 }
 a {
   text-decoration: none;
@@ -141,6 +146,11 @@ a {
 }
 p {
   margin: 0;
+}
+
+/* Animate */
+.badge.animate__animated {
+  --animate-delay: 9s;
 }
 
 /* Navbar */
