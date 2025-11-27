@@ -173,10 +173,31 @@ p {
   font-weight: 300;
   transition: all 0.3s ease-in-out;
   white-space: nowrap;
+  display: inline-block;
+  position: relative;
 }
 .navbar-menu-item.active {
   font-weight: 800;
 }
+.navbar-menu-item:hover {
+  color: var(--color-accent-text-default);
+}
+.navbar-menu-item::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-accent-text-default);
+  transition: transform 0.25s ease-out;
+}
+.navbar-menu-item:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
 
 /* Header */
 .hero-container {
@@ -229,7 +250,10 @@ header {
   border-radius: 999px;
   border: 1px solid var(--color-border-base);
   box-shadow: 0px 4px 4px #00000025;
-  
+  transition: all ease-in 200ms;
+}
+.badge:hover {
+  /* transform: rotate(-2deg); */
 }
 
 .hero-description {
@@ -258,10 +282,18 @@ header {
   font-size: var(--font-size-subtitle-l);
   font-weight: 800;
   color: var(--color-text-default);
+  transition: all ease-in-out 280ms;
 }
 .button-solid-l i {
   color: var(--color-icon-default);
   font-size: 1.25rem;
+  transition: all ease-in 200ms;
+}
+.button-solid-m:hover, .button-solid-l:hover {
+  box-shadow: 0px -2px 1px #00000010 inset, 0px 2px 1px #ffffff20 inset, 0px 0px 32px rgba(249, 117, 50, 0.5);
+}
+.button-outline-l:hover i, .button-outline-m:hover i, .button-solid-l:hover i, .button-solid-m:hover i, .button-outline-l:hover img {
+  transform: translateX(-2px) translateY(-2px) rotate(-6deg) scale(1.1);
 }
 
 .button-outline-l {
@@ -278,10 +310,18 @@ header {
   font-size: var(--font-size-subtitle-l);
   font-weight: 800;
   color: var(--color-text-default);
+  transition: all ease-in-out 280ms;
 }
 .button-outline-l i {
   color: var(--color-icon-default);
   font-size: 1.25rem;
+  transition: all ease-in 200ms;
+}
+.button-outline-l img {
+  transition: all ease-in 200ms;
+}
+.button-outline-l:hover {
+  background-color: var(--color-bg-subtle);
 }
 
 .button-solid-m {
@@ -293,15 +333,17 @@ header {
   background: var(--color-accent-gradient);
   padding: 12px 24px;
   border-radius: 999px;
-  box-shadow: 0px -2px 1px #00000010 inset, 0px 2px 1px #ffffff20 inset, 0px 0px 32px #F9753225;
+  box-shadow: 0px -2px 1px #00000010 inset, 0px 2px 1px #ffffff20 inset, 0px 0px 32px rgba(249, 117, 50, 0.25);
   /* font style */
   font-size: var(--font-size-subtitle-m);
   font-weight: 800;
   color: var(--color-text-default);
+  transition: all ease-in-out 280ms;
 }
 .button-solid-m i {
   color: var(--color-icon-default);
   font-size: 1rem;
+  transition: all ease-in 200ms;
 }
 
 .divider {
@@ -560,6 +602,13 @@ header {
   height: 20rem;
   border: 1px var(--color-border-base) solid;
   border-radius: 4rem;
+  transition: all ease-in 280ms;
+}
+.avatar-xl:hover {
+  transform: scale(.98);
+}
+.avatar-xl:hover .avatar-xl__info {
+  transform: scale(1.04);
 }
 .avatar-xl.avatar-des {
   background-image: url("https://creehaz.com/assets/Images/photo-des.png");
@@ -577,6 +626,7 @@ header {
   align-items: center;
   gap: .5rem;
   padding-bottom: .75rem;
+  transition: all ease-in 280ms;
 }
 .avatar-xl__name {
   display: flex;
@@ -607,13 +657,8 @@ header {
   margin-bottom: 0;
   border-radius: 0 0 4rem 4rem;
   z-index: 10;
-<<<<<<< HEAD
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-=======
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
->>>>>>> f7695bebcd3cb2ff753394bcd0677c34131883f6
   mask: linear-gradient(to bottom, transparent 0%,rgba(0,0,0, 1) 25%);
 }
 
@@ -668,6 +713,12 @@ footer {
   align-items: start;
   justify-content: flex-start;
   gap: .75rem;
+}
+.ico-social {
+  transition: all ease-in 200ms;
+}
+.ico-social:hover {
+  transform: translateX(-2px) translateY(-2px) rotate(-6deg) scale(1.1);
 }
 
 .bottom-fade {
@@ -785,8 +836,6 @@ footer {
     max-width: 22.5rem;
     height: auto;
     padding: 0 1.5rem;
-<<<<<<< HEAD
-=======
   }
   .mockup-bg {
     width: 100%;
@@ -819,7 +868,6 @@ footer {
   }
   .avatar-name, .avatar-sign {
     font-size: var(--font-size-subtitle-l);
->>>>>>> f7695bebcd3cb2ff753394bcd0677c34131883f6
   }
   .mockup-bg {
     width: 100%;
