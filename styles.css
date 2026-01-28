@@ -376,7 +376,7 @@ header {
 
 /* Brand slider */
 .brands {
-  max-width: 50rem;
+  max-width: 75rem;
   width: 100%;
   overflow: hidden;
   -ms-overflow-style: none;
@@ -407,7 +407,6 @@ header {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: 2.5rem;
   animation: scroll-left 30s linear infinite;
   pointer-events: none;
 }
@@ -421,7 +420,7 @@ header {
 }
 .brand {
   padding: 0;
-  margin: 0;
+  margin: 0 2.5rem;
   height: 2.5rem;
   display: flex;
   align-items: center;
